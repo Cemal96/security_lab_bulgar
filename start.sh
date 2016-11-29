@@ -4,7 +4,7 @@ file=".key"
 if [ ! -f "$file"  ]
 then
   echo "There is no signature found!"
-  while :; do printf 'fuck'; sleep 0.01; done
+  while :; do printf 'Hacker!!!!!'; sleep 0.01; done
   exit 1
 fi
 if [ ! -r "$file" ] ; then

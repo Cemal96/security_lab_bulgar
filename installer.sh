@@ -17,7 +17,7 @@ else
 fi
 
 echo "Okey, now we are going to load our project to your computer from Github.."
-git clone git@github.com
+git clone https://github.com/Cemal96/security_lab_bulgar.git
 
 cd "security_lab_bulgar"
 
