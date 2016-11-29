@@ -1,0 +1,23 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.sign_form {
+  width: 100%;
+  border: solid 2px grey;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+#user_email {
+  width: 100%;
+}
+
+#user_password {
+  width: 100%;
+}
+
+#user_password_confirmation {
+  width: 100%;
+}

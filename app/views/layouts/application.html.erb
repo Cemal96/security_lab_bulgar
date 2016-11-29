@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SecureLabs</title>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4">
+        <% flash.each do |key, value| %>
+            <div class="alert alert-<%= flash_class_name(key) %>" id="flash-box" role="alert"><%= value %></div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+  <%= yield %>
+</body>
+</html>

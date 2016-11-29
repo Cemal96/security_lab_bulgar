@@ -1,0 +1,7 @@
+%h1 Users home
+- if user_signed_in?
+  %h2=current_user.email
+  =link_to "Sign Out",  destroy_user_session_path
+- else
+  =link_to "Sign Up",  new_user_registration_path
+  =link_to "Sign In",  new_user_session_path
